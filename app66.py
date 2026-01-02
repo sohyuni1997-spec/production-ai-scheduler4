@@ -341,7 +341,7 @@ def validate_ai_response(response, current_df):
 # --- AI 분석 엔진 (최종 완성) ---
 def ask_professional_scheduler(question, current_df, history_df):
     api_url = "https://ai.potens.ai/api/chat"
-    api_key = "OsXduYGHTpWsK6X1slgtCh9eTJao23ni"
+    api_key = "qD2gfuVAkMJexDAcFb5GnEb1SZksTs7o"
     headers = {"Content-Type": "application/json", "Authorization": f"Bearer {api_key}"}
 
     target_date = None
@@ -634,5 +634,6 @@ with st.expander("🐛 디버그: 사전 탐지 이슈 및 품목 이동 매트�
                     st.write(f"  - {prod} (PLT: {plt_val})")
     else:
         st.info("💡 날짜가 포함된 질문을 입력하면 디버그 정보가 표시됩니다.")
+
 
 
